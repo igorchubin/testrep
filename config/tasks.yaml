@@ -6,3 +6,6 @@ events:
   - event: push
     branch: ic.y
     build: touch /tmp/ic.y
+  - event: push
+    branch: ic.z
+    build: touch /tmp/ic.z
