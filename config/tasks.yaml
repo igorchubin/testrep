@@ -3,3 +3,9 @@ events:
   - event: push
     branch: master
     build: touch /tmp/done2
+  - event: push
+    branch: ic.y
+    build: touch /tmp/ic.y
+  - event: push
+    branch: ic.z
+    build: touch /tmp/ic.z
