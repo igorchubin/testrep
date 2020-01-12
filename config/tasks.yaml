@@ -1,4 +1,4 @@
 ---
 events:
   - event: push
-    build: touch /tmp/done
+    build: touch /tmp/done2
