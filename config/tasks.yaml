@@ -1,5 +1,5 @@
 ---
 events:
   - event: push
-    branch: master
+    branch: master2
     build: touch /tmp/done2
