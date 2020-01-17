@@ -4,3 +4,15 @@ events:
     branch: master
     build: touch /tmp/done2
     upload: touch /tmp/done3
+    on_success: success
+    on_failire: failure
+
+notifications:
+    success:
+        to:
+          - @Igor.Chubin
+        message: success
+    failure:
+        to:
+          - @Igor.Chubin
+        message: failure
