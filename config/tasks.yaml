@@ -5,7 +5,7 @@ events:
     build: touch /tmp/done2
     upload: touch /tmp/done3
     on_success: success
-    on_failire: failure
+    on_failure: failure
 
 notifications:
     success:
