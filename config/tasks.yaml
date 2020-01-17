@@ -6,13 +6,12 @@ events:
     upload: touch /tmp/done3
     on_success: success
     on_failure: failure
-
 notifications:
     success:
         to:
-          - @Igor.Chubin
+          - "@Igor.Chubin"
         message: success
     failure:
         to:
-          - @Igor.Chubin
+          - "@Igor.Chubin"
         message: failure
