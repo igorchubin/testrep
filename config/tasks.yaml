@@ -2,10 +2,16 @@
 events:
   - event: push
     branch: master
-    build: bash -c "env > /tmp/done2"
-    upload: bash -c "env > /tmp/done3"
+    build: touch /tmp/done2
     on_success: success
     on_failure: failure
+  - event: pull_request
+    branch: master
+    build: touch /tmp/done2
+    tests:
+      - name: basic tests
+        description: Basic tests
+        cmd: date; false
 notifications:
     success:
         to:
