@@ -9,4 +9,4 @@ events:
     tests:
       - name: basic tests
         description: Basic tests
-        cmd: date
+        cmd: date; false
