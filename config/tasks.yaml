@@ -3,3 +3,10 @@ events:
   - event: push
     branch: master
     build: touch /tmp/done2
+  - event: pull_request
+    branch: master
+    build: touch /tmp/done2
+    tests:
+      - name: basic tests
+        description: Basic tests
+        cmd: date
