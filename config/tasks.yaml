@@ -3,6 +3,8 @@ events:
   - event: push
     branch: master
     build: touch /tmp/done2
+    on_success: success
+    on_failure: failure
   - event: pull_request
     branch: master
     build: touch /tmp/done2
@@ -10,3 +12,12 @@ events:
       - name: basic tests
         description: Basic tests
         cmd: date; false
+notifications:
+    success:
+        to:
+          - "@Igor.Chubin"
+        message: success
+    failure:
+        to:
+          - "@Igor.Chubin"
+        message: failure
